@@ -1,13 +1,13 @@
 import React from 'react';
 import Cells from './Cells';
 
-function Rows(props) {
+function Rows({users, keys, onValueSave, filters}) {
 
 
   return (
     <>
       {
-        props.users.map(user => <tr> <Cells user={user} keys={props.keys} onValueSave={props.onValueSave}/></tr>)
+        users.map(user => <tr> <Cells user={user} keys={keys} onValueSave={onValueSave} filters={filters}/></tr>)
       }
     </>
   )

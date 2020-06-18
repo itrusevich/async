@@ -17,3 +17,7 @@ td {
   border-collapse: collapse;  
 }
 
+.hilited {
+  background-color: aqua;
+}
+
